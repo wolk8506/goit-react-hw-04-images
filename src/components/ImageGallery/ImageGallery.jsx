@@ -28,7 +28,6 @@ export function ImageGallery({
           } else setImagesQury(res.hits);
         })
         .finally(() => {
-          console.log(page);
           if (page === 1) {
             window.scrollTo({ top: 0, behavior: 'smooth' });
           }
